@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-$conexion = new mysqli('localhost', 'usuario', 'contraseña', 'mi_base_datos');
+$conexion = new mysqli('b4qhbwwqys2nhher1vul-mysql.services.clever-cloud.com', 'upvge9afjesbmmgv', 'BS2bxJNACO1XYEmWBqA0', 'b4qhbwwqys2nhher1vul');
 
 if ($conexion->connect_error) {
     echo json_encode(["status" => "error", "message" => "Conexión fallida"]);
