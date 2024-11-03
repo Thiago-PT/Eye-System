@@ -13,7 +13,7 @@ $nombres = $_POST['nombres'];
 $grupo = $_POST['grupo'];
 $jornada = $_POST['jornada'];
 
-$sql = "INSERT INTO estudiantes (codigo_est, apellidos, nombres, grupo, jornada) VALUES (?, ?, ?, ?, ?)";
+$sql = "INSERT INTO estudiante (codigo_est, apellidos, nombres, grupo, jornada) VALUES (?, ?, ?, ?, ?)";
 $stmt = $conexion->prepare($sql);
 $stmt->bind_param("sssss", $codigo_est, $apellidos, $nombres, $grupo, $jornada);
 
