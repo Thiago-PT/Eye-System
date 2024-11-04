@@ -30,4 +30,3 @@ if ($stmt->execute()) {
 $stmt->close();
 $conexion->close();
 ?>
-```
