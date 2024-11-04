@@ -15,7 +15,7 @@ $correo = $_POST['correo'];
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
 // Preparar la consulta SQL
-$sql = "INSERT INTO usuario (correo, password) VALUES (?, ?)";
+$sql = "INSERT INTO admins (correo, password) VALUES (?, ?)";
 $stmt = $conexion->prepare($sql);
 $stmt->bind_param("ss", $correo, $password);
 
