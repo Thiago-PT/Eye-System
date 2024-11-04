@@ -10,7 +10,7 @@ if ($conexion->connect_error) {
 $correo = $_POST['correo'];
 $password = $_POST['password'];
 
-$sql = "SELECT password FROM usuario WHERE correo = ?";
+$sql = "SELECT password FROM admins WHERE correo = ?";
 $stmt = $conexion->prepare($sql);
 $stmt->bind_param("s", $correo);
 $stmt->execute();
